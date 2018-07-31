@@ -314,7 +314,10 @@
         
           
             <h1 id="安装lispy"><a href="#安装lispy" class="headerlink" title="安装lispy"></a>安装lispy</h1><p>  在dotspacemacs-additional-packages中添加lispy<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dotspacemacs-additional-packages &apos;(lispy)</span><br></pre></td></tr></table></figure></p>
-<h1 id="安装lpy"><a href="#安装lpy" class="headerlink" title="安装lpy"></a>安装lpy</h1>
+<h1 id="安装lpy"><a href="#安装lpy" class="headerlink" title="安装lpy"></a>安装lpy</h1><ol>
+<li>Windows下，Emacs的环境变量配置<br>在Emacs中输入C-x C-f，然后打开路径~（即当前的home环境变量所指的路径，一般是这个路径：C:\Users\Administrator\AppData\Roaming）。<br>进入该目录，如果此目录下没有.emacs，可以创建一个.emacs或_emacs，然后在这个.emacs文件里，加入如下语句：<br>‘’’<br>(setenv “HOME” “D:/workspace/emacs-config”)<br>(load-file “D:/workspace/emacs-config/.emacs.d/init.el”)<br>‘’’<br>在spacemacs中的init.el会自动加载windows当前的系统变量，切不可改变该文件内容，否则会造成一些莫名其妙的困扰。</li>
+</ol>
+
           
         
       
