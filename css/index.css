@@ -37,10 +37,15 @@
 	color: #3d3d3d;
 }
 
-.theme-annie-post-date,
 .theme-annie-post-title {
-	font-weight: bold;
+    font-weight: bold;
+    font-size: 20px;
 }
+
+.theme-annie-post-date{
+    font-weight: bold;
+}
+
 
 .continue-read {
 	padding: 0.5rem 1rem;
