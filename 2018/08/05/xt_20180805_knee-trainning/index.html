@@ -308,20 +308,7 @@
 		/
 		
 
-    <span class="leancloud_visitors" id="/2018/08/05/xt_20180805_knee-trainning/_visitors" data-url="/2018/08/05/xt_20180805_knee-trainning/" data-title="膝关节治疗过程跟踪">
-        热度
-        <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
-    </span>
-    
-    /
 
-
-
-    <span class="leancloud_likes" id="/2018/08/05/xt_20180805_knee-trainning/_likes" data-url="/2018/08/05/xt_20180805_knee-trainning/" data-title="膝关节治疗过程跟踪" rel="unlike">
-        喜欢
-        <i class="fa fa-heart"></i>
-        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
-    </span>
 
 	</div>
 
@@ -534,8 +521,31 @@ Windows下，E...
 
 		
 
-			<!-- I don't know 【表情】-->
-			
+			<!-- comment valine -->
+			<!-- show valine comment -->
+<div id="valineComment" class="comment"></div>
+
+<!-- valine`s js & css -->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/js/valine.min.js"></script>
+<link rel="stylesheet" href="/css/comment.css">
+<script>
+	if( $('#valineComment').length ) {
+		new Valine({
+			// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+			av: AV,
+			//使用id寻找div元素（使用class可能找不到?）
+			el: '#valineComment',
+			emoticon_url: 'https://cloud.panjunwen.com/alu',
+			emoticon_list: ["吐.png", "期待.png", "高兴.png", "吐血倒地.png", "哭泣.png", "欢呼.png"],
+			app_id: "7vGDpLEfaiE53EBtVrXv9vwc-gzGzoHsz", //获取APP ID
+			app_key: "yLzT4JM3MTjStpEjqKc4Ujgl", //获取APP KEY
+			placeholder: "hello", //评论框占位提示文字        			
+		});
+	}
+</script>
+
+
 		
 		
 	
@@ -567,14 +577,6 @@ Windows下，E...
 				参考了01 & 02进行简单的设计与实现
 -->
 
-
-
-	<script>
-		var appid = '7vGDpLEfaiE53EBtVrXv9vwc-gzGzoHsz',
-            appkey = 'yLzT4JM3MTjStpEjqKc4Ujgl';	  
-        AnnieLeancloud(appid, appkey);         
-	</script>
-    
 
 
  
